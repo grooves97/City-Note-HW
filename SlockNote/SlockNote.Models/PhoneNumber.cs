@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SlockNote.Models
 {
-    public class Number
+    public class PhoneNumber : Entity
     {
-
+        public int Phone { get; set; }
     }
 }

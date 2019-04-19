@@ -8,6 +8,8 @@ namespace SlockNote.Models
 {
     public class City : Entity
     {
-
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public List<PhoneNumber> Numbers { get; set; }
     }
 }

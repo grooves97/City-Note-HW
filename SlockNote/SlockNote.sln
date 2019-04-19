@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlockNote", "SlockNote\Sloc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlockNote.Models", "SlockNote.Models\SlockNote.Models.csproj", "{4018BC05-4911-486A-BC1B-78FD6C3C16AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlockNote.DataContext", "SlockNote.DataContext\SlockNote.DataContext.csproj", "{04A52629-7A54-4FB7-B137-2251F4650CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4018BC05-4911-486A-BC1B-78FD6C3C16AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4018BC05-4911-486A-BC1B-78FD6C3C16AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4018BC05-4911-486A-BC1B-78FD6C3C16AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A52629-7A54-4FB7-B137-2251F4650CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A52629-7A54-4FB7-B137-2251F4650CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A52629-7A54-4FB7-B137-2251F4650CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A52629-7A54-4FB7-B137-2251F4650CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
