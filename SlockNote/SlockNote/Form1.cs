@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace SlockNote
 {
-    public partial class Form1 : Form
+    public partial class SlackNote : Form
     {
-        public Form1()
+        public SlackNote()
         {
             InitializeComponent();
+        }
+
+        private void textBoxDigit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char digit = e.KeyChar;
+
+            if(!Char.IsDigit(digit) && digit != 8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
