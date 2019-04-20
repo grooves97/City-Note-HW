@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SlockNote.DataContext;
 
 namespace SlockNote
 {
@@ -15,6 +16,13 @@ namespace SlockNote
         public SlackNote()
         {
             InitializeComponent();
+            using(var context = new DataModels())
+            {
+                foreach (var city in context.Cities.ToList())
+                {
+                    comboBoxCity.Items.Add(city.Name);
+                }
+            }
         }
 
         private void textBoxDigit_KeyPress(object sender, KeyPressEventArgs e)
@@ -25,6 +33,16 @@ namespace SlockNote
             {
                 e.Handled = true;
             }
+        }
+
+        private void comboBoxCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadTableView()
+        {
+
         }
     }
 }

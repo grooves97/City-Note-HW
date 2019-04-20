@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 
 namespace SlockNote.DataContext
 {
-    public class DataInitializer : DropCreateDatabaseAlways<DataContext>
+    public class DataInitializer : DropCreateDatabaseIfModelChanges<DataModels>
     {
         private List<City> cities;
-        private List<PhoneNumber> numbers;
-
         public DataInitializer()
         {
             cities = new List<City>
@@ -40,7 +38,7 @@ namespace SlockNote.DataContext
             };
         }
 
-        protected override void Seed(DataContext context)
+        protected override void Seed(DataModels context)
         {
             context.Cities.AddRange(cities);
             base.Seed(context);
